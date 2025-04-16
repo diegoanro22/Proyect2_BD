@@ -4,14 +4,17 @@ import time
 from datetime import datetime
 from statistics import mean
 import random
+from dotenv import dotenv_values
+
+config = dotenv_values(".env")  # Lee el archivo y devuelve un diccionario
 
 # Config DB
 db_config = {
-    "dbname": "Proyect2_Isolation",
-    "user": "postgres",
-    "password": "diegodb",
-    "host": "localhost",
-    "port": 5432
+    "dbname": config["DB_NAME"],
+    "user": config["DB_USER"],
+    "password": config["DB_PASSWORD"],
+    "host": config["DB_HOST"],
+    "port": config["DB_PORT"]
 }
 
 # Nivel de aislamiento
