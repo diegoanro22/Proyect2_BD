@@ -77,7 +77,6 @@ INSERT INTO localidades (id_evento, seccion, fila, numero) VALUES
 (12, 'VIP', 'A', 2),
 (12, 'VIP', 'A', 3),
 (12, 'General', 'C', 4),
-(12, 'General', 'C', 5),
 (13, 'General', 'C', 1),
 (13, 'VIP', 'A', 2),
 (13, 'VIP', 'A', 3),
